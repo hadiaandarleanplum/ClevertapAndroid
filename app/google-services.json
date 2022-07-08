@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "714844570598",
+    "project_id": "clevertapandroid-fdb44",
+    "storage_bucket": "clevertapandroid-fdb44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714844570598:android:6a269b48b36f0fdcde4c27",
+        "android_client_info": {
+          "package_name": "com.hadia.clevertapandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714844570598-0eabo65dq5cevf2nf7l67krq3jqbgpe2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJjAE-zEW-_3Oad5qsmRLY-G7VIZc-clY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714844570598-0eabo65dq5cevf2nf7l67krq3jqbgpe2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

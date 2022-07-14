@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.clevertap.android.sdk.CleverTapAPI;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -85,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
         //CleverTapAPI.createNotificationChannelGroup(getApplicationContext(),"PushNotifsGroupID","PushNotifsGroupName");
         //CleverTapAPI.createNotificationChannel(getApplicationContext(),"YourChannelId","YourChannelName","YourChannelDescription", NotificationManager.IMPORTANCE_MAX,"PushNotifsGroupID",true);
         CleverTapAPI.createNotificationChannel(getApplicationContext(),"YourChannelId","Your Channel Name","Your Channel Description",NotificationManager.IMPORTANCE_MAX,true);
+
+        //FCM CUSTOM PUSH
+        String fcmRegId = FirebaseInstanceId.getInstance().getToken();
+        clevertapDefaultInstance.pushFcmRegistrationId(fcmRegId,true);
 
         //EVENTS
         // event without properties

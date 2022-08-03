@@ -93,7 +93,14 @@ public class MainActivity extends AppCompatActivity {
         clevertapDefaultInstance.pushFcmRegistrationId(fcmRegId,true);
 
         //EVENTS
-        // event without properties
-        //CleverTapAPI.pushEvent("Product viewed");
+        Button btnAddedtoCart = findViewById(R.id.btnAddedtoCart);
+        btnAddedtoCart.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            public void onClick (View v){
+                CleverTapAPI.pushEvent("Added to Cart");
+            }
+        });
     }
+
+
 }

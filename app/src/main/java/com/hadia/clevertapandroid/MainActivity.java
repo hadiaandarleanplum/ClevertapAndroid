@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         btnAddedtoCart.setOnClickListener(new View.OnClickListener() {
             //@Override
             public void onClick (View v){
-                CleverTapAPI.pushEvent("Added to Cart");
+                clevertapDefaultInstance.pushEvent("Added to Cart");
             }
         });
     }

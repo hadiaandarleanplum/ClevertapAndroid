@@ -30,6 +30,8 @@ import java.util.Locale;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
+
 public class MainActivity extends AppCompatActivity implements CTInboxListener, CTPushNotificationListener {
     Context ctx;
     public CleverTapAPI clevertapDefaultInstance;
@@ -40,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements CTInboxListener, 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //mixpanel
+        boolean trackAutomaticEvents = true;
+        MixpanelAPI mixpanel = MixpanelAPI.getInstance(this, "9c0dd2d3df892c38df240c28f47a445d", trackAutomaticEvents);
 
         requestLocationPermission(); //request location permission at runtime
 

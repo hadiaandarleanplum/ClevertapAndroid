@@ -16,7 +16,10 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
-
+    <!-- This permission is optional but recommended so events will
+  contain information about bluetooth state -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
 
     <application
         android:allowBackup="true"

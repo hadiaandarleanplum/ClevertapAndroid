@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.google.android.exoplayer:exoplayer-core:2.18.2@aar">
+  <library name="Gradle: com.google.android.exoplayer:exoplayer-core:2.18.2@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6c02db13f115359e8fb8e3896c0931dc/transformed/exoplayer-core-2.18.2/annotations.zip!/" />
     </ANNOTATIONS>

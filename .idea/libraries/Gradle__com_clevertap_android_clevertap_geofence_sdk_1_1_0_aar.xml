@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: com.clevertap.android:clevertap-geofence-sdk:1.1.0@aar">
+  <library name="Gradle: com.clevertap.android:clevertap-geofence-sdk:1.1.0@aar" external-system-id="GRADLE">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/da9361cd926de4e49b5a532df36f6989/transformed/clevertap-geofence-sdk-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>

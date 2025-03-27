@@ -8,18 +8,19 @@
     <!-- Recommended so that CleverTap knows when to attempt a network call -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-    <!-- Location -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
     <!-- This permission is optional but recommended so events will
   contain information about bluetooth state -->
     <uses-permission
         android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 
     <application
         android:allowBackup="true"
@@ -31,7 +32,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClevertapAndroid"
         tools:targetApi="31"
-        android:name="com.clevertap.android.sdk.Application">
+        android:name="com.clevertap.android.sdk.Application"
+
+        >
+
+        <receiver
+            android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"
+            android:exported="false"
+            android:enabled="true">
+        </receiver>
 
         <service
             android:name="com.clevertap.android.sdk.pushnotification.fcm.FcmMessageListenerService"
@@ -43,10 +52,11 @@
 
         <meta-data
             android:name="CLEVERTAP_ACCOUNT_ID"
-            android:value="WRZ-KK5-656Z"/>
+            android:value="RKR-Z99-876Z"/>
+
         <meta-data
             android:name="CLEVERTAP_TOKEN"
-            android:value="533-120"/>
+            android:value="cc1-232"/>
 
         <meta-data
             android:name="CLEVERTAP_REGION"
@@ -54,6 +64,10 @@
 
         <meta-data
             android:name="CLEVERTAP_BACKGROUND_SYNC"
+            android:value="1"/>
+
+        <meta-data
+            android:name="CLEVERTAP_USE_GOOGLE_AD_ID"
             android:value="1"/>
 
         <activity
